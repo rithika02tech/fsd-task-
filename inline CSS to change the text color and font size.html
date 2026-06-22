@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Café Landing Page</title>
+
+<style>
+    body{
+        margin:0;
+        font-family:Arial, sans-serif;
+        background:#f7f2ea;
+    }
+
+    /* NAVBAR */
+    .navbar{
+        background:#2f1f1a;
+        padding:15px 40px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .logo{
+        color:#f5e6c8;
+        font-size:22px;
+        font-weight:bold;
+    }
+
+    .navlinks{
+        color:#d9c6a5;
+        font-size:14px;
+    }
+
+    /* HERO SECTION */
+    .hero{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:60px 80px;
+        gap:40px;
+    }
+
+    .hero-text{
+        width:50%;
+    }
+
+    .hero-text h1{
+        font-size:48px;
+        color:#2f1f1a;
+        margin-bottom:15px;
+    }
+
+    .hero-text p{
+        font-size:18px;
+        color:#5a4a42;
+        line-height:1.7;
+    }
+
+    .highlight{
+        margin-top:15px;
+        color:#a85a3a;
+        font-weight:bold;
+    }
+
+    /* HERO IMAGE */
+    .hero-img{
+        width:50%;
+    }
+
+    .hero-img img{
+        width:100%;
+        height:350px;
+        object-fit:cover;
+        border-radius:18px;
+        box-shadow:0 15px 30px rgba(0,0,0,0.25);
+    }
+
+    /* GALLERY */
+    .gallery{
+        display:flex;
+        gap:20px;
+        padding:20px 80px 60px;
+    }
+
+    .gallery img{
+        width:33%;
+        height:200px;
+        object-fit:cover;
+        border-radius:15px;
+        box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">☕ Café</div>
+    <div class="navlinks">Home | Menu | About | Contact</div>
+</div>
+
+<!-- HERO SECTION -->
+<div class="hero">
+
+    <div class="hero-text">
+        <h1>Modern Café Experience</h1>
+        <p>
+            A café is more than coffee. It is a place where people relax,
+            work, and enjoy peaceful moments with aesthetic vibes and warm comfort.
+        </p>
+
+        <div class="highlight">
+            ✨ Fresh Coffee • Cozy Atmosphere • Good Energy
+        </div>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwE1VBxl0Gd4gbjzTvk7cXHzm1Y8llsU_aGA&s">
+    </div>
+
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24">
+    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814">
+    <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31">
+</div>
+
+</body>
+</html>
