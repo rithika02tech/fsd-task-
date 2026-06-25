@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Input Validation</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background-color:#f3eee8;
+    text-align:center;
+    margin-top:70px;
+}
+
+
+.box{
+
+    background-color:white;
+    width:380px;
+    padding:35px;
+    margin:auto;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.12);
+
+}
+
+
+h2{
+    color:#5b4b43;
+}
+
+
+input{
+
+    width:80%;
+    padding:12px;
+    border:1px solid #b8a99a;
+    border-radius:8px;
+    font-size:16px;
+
+}
+
+
+button{
+
+    margin-top:20px;
+    padding:12px 30px;
+    background-color:#8b6f5a;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background-color:#6f5543;
+
+}
+
+
+#result{
+
+    margin-top:20px;
+    font-size:17px;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+
+<h2>Text Input Validation</h2>
+
+
+<input type="text" id="username" placeholder="Enter your name">
+
+
+<br>
+
+
+<button onclick="validateInput()">Submit</button>
+
+
+<p id="result"></p>
+
+
+</div>
+
+
+
+<script>
+
+
+function validateInput(){
+
+
+let name = document.getElementById("username").value;
+
+
+if(name.trim()==""){
+
+
+document.getElementById("result").innerHTML =
+"Please enter your name";
+
+
+}
+
+else{
+
+
+document.getElementById("result").innerHTML =
+"Welcome " + name + "! Input is valid.";
+
+
+}
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
