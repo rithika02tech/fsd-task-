@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Button Event Listener</title>
+
+<style>
+body{
+    font-family: Arial;
+    background-color:#e8eef2;
+    text-align:center;
+    margin-top:80px;
+}
+
+.container{
+    background-color:#ffffff;
+    width:350px;
+    padding:30px;
+    margin:auto;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#34495e;
+}
+
+button{
+    background-color:#5d7b8c;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#46616f;
+}
+
+#message{
+    margin-top:20px;
+    color:#556270;
+    font-size:18px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Button Event Example</h2>
+
+<button id="myButton">Click Me</button>
+
+<p id="message"></p>
+
+</div>
+
+
+<script>
+
+let button = document.getElementById("myButton");
+
+button.addEventListener("click", function(){
+
+    document.getElementById("message").innerHTML =
+    "Button clicked successfully! Event listener is working.";
+
+});
+
+</script>
+
+
+</body>
+</html>
