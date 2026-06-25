@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Change Text Using DOM</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background-color:#e9e5df;
+    text-align:center;
+    margin-top:80px;
+}
+
+
+.container{
+
+    background-color:white;
+    width:400px;
+    padding:35px;
+    margin:auto;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.12);
+
+}
+
+
+h2{
+
+    color:#4b5d67;
+
+}
+
+
+p{
+
+    font-size:18px;
+    color:#666;
+
+}
+
+
+button{
+
+    background-color:#607d8b;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+
+}
+
+
+button:hover{
+
+    background-color:#455a64;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h2>DOM Text Change Example</h2>
+
+
+<p id="text">
+This is the original text.
+</p>
+
+
+<button onclick="changeText()">
+Change Text
+</button>
+
+
+</div>
+
+
+
+<script>
+
+
+function changeText(){
+
+
+document.getElementById("text").innerHTML =
+"Text content has been changed using JavaScript DOM!";
+
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>
